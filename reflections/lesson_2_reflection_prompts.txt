@@ -1,0 +1,19 @@
+1.如何初始化一个库？为什么需要这样做？
+	进入目标文件夹，运行git init。git会自动生成.git隐藏文件夹。这时候还没有做过提交，所以git log会提示没有做过任何的commit。任何时候都可以使用git status来查看从上一次提交开始后文件所作出的改动。
+
+2.暂存区与工作目录和版本库有何不同？你认为它具有什么价值？
+	有暂存区使得提交操作更加灵活，不是全或无的概念。可以根据实际的情况选择工作区中的一次有意义的改动组成某一次的选择性提交，这样的历史版本也更加有意义。
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
