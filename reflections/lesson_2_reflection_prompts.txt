@@ -4,13 +4,19 @@
 2.暂存区与工作目录和版本库有何不同？你认为它具有什么价值？
 	有暂存区使得提交操作更加灵活，不是全或无的概念。可以根据实际的情况选择工作区中的一次有意义的改动组成某一次的选择性提交，这样的历史版本也更加有意义。
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+3.如何使用暂存区确保为每项逻辑更改进行一次提交？
+	暂存区的存在为工作区和仓库搭建了一个桥梁，在本地更改的文件不一定只包含了一个逻辑更改，但是我们可以用git add把每个逻辑包含的文件添加到暂存区，实现分离，也为之后如果出现bug的时候方便检查出问题的所在。
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+4.在哪些情况下，分支可以帮助你有序地组织历史记录？分支将如何提供帮助？
+	要创建新内容的时候或者修复bug的时候，这样可以使得项目更加有条理性，自己可以轻松地在不同的功能状态下切换。	
+	分支有助于公开合作。在分享项目的时候，主分支一定是稳健的，始终能够运行；此外还可以有开发分支，当前正在工作的版本；以及试验性分支，去尝试一些新功能的开发，即便可能会崩溃，也可以与对此有兴趣的人分享。
+	
+
+5.图表如何帮助你直观显示分支结构？
+	git log --graph --oneline branch1 branch2
+	因为git log只能在当前的分支上追溯各个版本提交的情况，而图表命令能够显示分支从哪个节点创建的，之后又做了哪些提交，更加清晰。 
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
