@@ -18,8 +18,8 @@
 	因为git log只能在当前的分支上追溯各个版本提交的情况，而图表命令能够显示分支从哪个节点创建的，之后又做了哪些提交，更加清晰。 
 
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+6.将两个分支合并到一起有何结果？为什么我们在图表中表示它的方式是那样的？
+	分支合并有利于团队中分开处理不同的任务而减少造成相互影响的情况。当各自的任务都完成之后可以再合并到master分支中。图表中会显示出分支分离和发展的情况，更加直观，分支的各次提交并不会影响到主分支的代码。
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+7.Git 的自动合并与始终手动进行合并各有何优缺点？
+	自动合并优点就是便捷，，没有冲突的情况下自动合并省去了很多的繁琐操作。但是一旦有冲突，说明多人对同一个地方做了更改，这就需要人工介入去判断和衡量究竟如何取舍了，同时Git还标示出来哪些地方出现了冲突，也比较直接。
